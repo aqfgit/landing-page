@@ -42,3 +42,56 @@ body {
   background: #462810;
   color: #ffffff;
 }
+
+.about {
+  margin: 0;
+}
+
+.about h2 {
+  text-align: left;
+  margin: 0;
+  font-size: 40px;
+}
+
+.flex-row-reversed {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.about article p {
+  font-size: 28px;
+}
+
+.about img {
+  height: 100%;
+  width: 50%;
+}
+
+.about .offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.tech svg {
+  width: 150px;
+  height: 150px;
+}
+
+.tech .html-logo path {
+  fill: #e34f26;
+}
+
+.tech .css-logo path {
+  fill: #0079c1;
+}
+
+.tech .react-logo path {
+
+}
+
+.tech .laravel-logo path {
+  fill: #f55247;
+}
