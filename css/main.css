@@ -75,9 +75,18 @@ body {
   padding: 0 20px;
 }
 
+.tech {
+  padding: 10px 30px;
+}
+
+.tech h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
 .tech svg {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
 }
 
 .tech .html-logo path {
@@ -88,10 +97,34 @@ body {
   fill: #0079c1;
 }
 
-.tech .react-logo path {
-
-}
 
 .tech .laravel-logo path {
   fill: #f55247;
 }
+
+.tech figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech figcaption {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tech .html-logo figcaption, .tech .css-logo figcaption {
+  text-transform: uppercase;
+}
+
+.tech article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+
