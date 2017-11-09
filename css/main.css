@@ -97,7 +97,7 @@ body {
   font-size: 40px;
 }
 
-.tech svg {
+.tech img {
   width: 250px;
   height: 250px;
 }
@@ -178,13 +178,9 @@ body {
   margin: 0 90px;
 }
 
-.services article svg {
+.services article img {
   width: 90px;
   height: 90px;
-}
-
-.services svg path {
-  fill: #ff8c1a;
 }
 
 .services figure {
@@ -221,40 +217,18 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 250px;
+  padding: 15px 250px;
 }
 
-.contact article svg {
+.contact article img {
   width: 50px;
   height: 50px;
 }
 
-.contact article svg path {
-  fill: #ffffff;
-}
-
 .contact {
-  /* background: url('../img/header-bg.jpeg') 100% no-repeat;
-  position: relative;
-  z-index: 1;
-  background-size:cover;
-  background-position: bottom; */
   background: #2e2e2e;
   color: #b4b3b6;
 }
-
-/* .contact:before{
-  display: block;
-  position: absolute;
-  content: "";
-  background: rgba(22, 22, 22, 0.7);
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-} */
 
 .contact figcaption {
   padding: 10px 20px;
@@ -365,7 +339,7 @@ body {
 
 @media (max-width: 1500px) {
   .contact article {
-    padding: 0 50px;
+    padding: 15px 50px;
 }
 
 .services article {
@@ -461,8 +435,49 @@ body {
   }
 }
 
+@media (max-width: 540px) {
+  .services h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-up input, .sign-up textarea {
+    width: 300px;
+  }
+}
+
+@media (max-width: 490px) {
+  .services h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .page-footer p {
+    font-size: 20px;
+  }
+
+  .page-footer img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 @media (max-width: 450px) {
   .text-sec h2 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .text-sec article p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-up input, .sign-up textarea {
+    width: 250px;
   }
 }
