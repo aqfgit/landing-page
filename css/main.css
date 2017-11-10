@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Archivo Narrow', sans-serif;
   color: #775555;
   line-height: 1.6;
   margin: 0;
@@ -21,17 +21,17 @@ body {
 
 .page-header h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 3.2em;
   line-height: 1.2;
 }
 
 .page-header p {
-  font-size: 25px;
+  font-size: 1.8em;
 }
 
 .page-header .button {
   text-decoration: none;
-  font-style: 18px;
+  font-style: 1.2em;
   color: #462810;
   border: #462810 2px solid;
   padding: 10px 20px;
@@ -50,7 +50,7 @@ body {
 .text-sec h2 {
   text-align: left;
   margin: 0;
-  font-size: 40px;
+  font-size: 2.8em;
 }
 
 .flex-row-reversed {
@@ -65,8 +65,8 @@ body {
   height: 600px;
 }
 
-.text-sec article p {
-  font-size: 28px;
+.text-sec p {
+  font-size: 1.4em;
 }
 
 .text-sec img {
@@ -77,7 +77,7 @@ body {
 }
 
 
-.text-sec article {
+.text-sec .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,13 +88,13 @@ body {
   height: 100%;
 }
 
-.tech {
+.tech ul {
   padding: 10px 30px;
 }
 
 .tech h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 3.8em;
 }
 
 .tech img {
@@ -115,16 +115,16 @@ body {
   fill: #f55247;
 }
 
-.tech figure {
+.tech li figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.tech figcaption {
+.tech li figcaption {
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -132,12 +132,18 @@ body {
   text-transform: uppercase;
 }
 
-.tech article {
+.tech ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 50px;
+  list-style: none;
+}
+
+.tech li {
+  display: flex;
+  justify-content: center;
 }
 
 .services {
@@ -164,21 +170,22 @@ body {
 .services h2 {
   margin: 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.8em;
   padding: 20px 0;
   margin-left: -80px;
 }
 
-.services article {
+.services ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 120px;
   margin: 0 90px;
+  list-style: none;
 }
 
-.services article img {
+.services img {
   width: 90px;
   height: 90px;
 }
@@ -192,37 +199,31 @@ body {
 
 .services figcaption {
   padding: 30px 0;
-  font-size: 25px;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
-.contact h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 40px;
-  padding: 20px 0;
 
-}
-
-
-.contact figure {
+.contact ul li figure {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.contact article {
+.contact ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 15px 250px;
+  list-style: none;
+  margin: 0;
 }
 
-.contact article img {
-  width: 50px;
-  height: 50px;
+.contact ul li figure img {
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .contact {
@@ -230,16 +231,16 @@ body {
   color: #b4b3b6;
 }
 
-.contact figcaption {
+.contact ul li figure figcaption {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
 .sign-up {
   background: #2e2e2e;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 2.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,15 +264,15 @@ body {
 
 .sign-up input, .sign-up textarea {
   border-radius: 10px;
- 
   border: 0px;
   height: 40px;
   width: 400px;
   background: #58575a;
-  font-size: 20px;
+  font-size: 0.6em;
   padding: 5px;
   color: #ffffff;
   box-shadow: none;
+  margin-top: 40px;
 }
 
 .sign-up input::-moz-placeholder, .sign-up textarea::-moz-placeholder {
@@ -294,6 +295,14 @@ body {
 
 .sign-up label {
   visibility: hidden;
+}
+
+  .hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
 }
 
 .sign-up textarea {
@@ -334,28 +343,29 @@ body {
 
 .page-footer p {
   padding: 0 20px 0 30px;
-  font-size: 25px;
+  font-size: 1.4em;
   text-align: center;
 }
 
+
 @media (max-width: 1500px) {
-  .contact article {
-    padding: 15px 50px;
+.contact ul {
+    padding: 15px 5px;
 }
 
-.services article {
+.tech li {
+  flex-basis: 40%;
+}
+.services ul {
   padding: 0;
 }
 
-.tech figure {
-  
-  width: 40%;
 }
 
 @media (max-width: 1320px) {
-  .text-sec article p {
+  .text-sec p {
     padding: 0 20px 20px 20px;;
-    font-size: 22px;
+    /* font-size: 22px; */
   }
 
   .text-sec h2 {
@@ -363,7 +373,7 @@ body {
   }
 
 @media (max-width: 1480px) {
-.services article {
+.services ul {
   margin: 0 10px;
 }
 
@@ -375,25 +385,25 @@ body {
 
 
 @media (max-width: 1070px) {
-  .contact figure {
+  .contact ul li {
     width: 100%;
   }
 
-  .contact figcaption {
-    font-size: 30px;
+  .contact ul li figure figcaption {
+    /* font-size: 30px; */
   }
 
-  .contact .email {
-    margin-left: 140px;
-  }
-
-  .contact .address {
+  .contact ul li .email {
     margin-left: 60px;
+  }
+
+  .contact ul li .address {
+    
   }
 }
 
 @media (max-width: 1150px) {
-  .services article {
+  .services ul {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -401,7 +411,7 @@ body {
 
 
 @media (max-width: 976px) {
-  .tech article {
+  .tech ul {
     justify-content: center;
   }
 }
@@ -413,32 +423,38 @@ body {
 }
 
 @media (max-width: 670px) {
-  .contact figcaption {
-    font-size: 20px;
+  .contact ul li figure figcaption {
+    /* font-size: 20px; */
   }
 
-  .contact figure {
+  .contact ul li figure {
     margin-left: 0;
   }
 
-  .contact article {
+  .contact ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .contact .email {
-    margin-right: 120px;
+  .contact ul li .email {
+    
   }
 
-  .contact .address {
-    margin-right: 90px;
+  .contact ul li .address {
+   
+  }
+}
+
+@media (max-width: 570px) {
+  .tech h2, .services h2 {
+    font-size: 3em;
   }
 }
 
 @media (max-width: 540px) {
   .services h2 {
-    font-size: 35px;
+    /* font-size: 35px; */
   }
 }
 
@@ -450,13 +466,14 @@ body {
 
 @media (max-width: 490px) {
   .services h2 {
-    font-size: 30px;
+    font-size: 2.4em;
+    padding: 0 5px;
   }
 }
 
 @media (max-width: 460px) {
   .page-footer p {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   .page-footer img {
@@ -465,20 +482,36 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .text-sec h2 {
-    font-size: 30px;
+    font-size: 2em;
+   
+    margin-bottom: 10px;
+  }
+
+  .flex-row, .flex-row-reversed {
+    height: auto;
+  }
+
+  .text-sec p {
+    margin: 10px 0;
   }
 }
 
 @media (max-width: 430px) {
-  .text-sec article p {
-    font-size: 18px;
+  .text-sec p {
+    /* font-size: 18px; */
   }
 }
 
 @media (max-width: 400px) {
   .sign-up input, .sign-up textarea {
     width: 250px;
+  }
+}
+
+@media (max-width: 372px) {
+  .contact ul li figure figcaption {
+    font-size: 1.2em;
   }
 }
