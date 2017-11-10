@@ -370,6 +370,7 @@ body {
   .text-sec h2 {
     margin: 12px;
   }
+}
 
 @media (max-width: 1480px) {
 .services ul {
@@ -393,7 +394,7 @@ body {
   }
 
   .contact ul li .email {
-    margin-left: 60px;
+    margin-left: 45px;
   }
 
   .contact ul li .address {
@@ -422,10 +423,6 @@ body {
 }
 
 @media (max-width: 670px) {
-  .contact ul li figure figcaption {
-    /* font-size: 20px; */
-  }
-
   .contact ul li figure {
     margin-left: 0;
   }
@@ -435,25 +432,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .contact ul li .email {
-    
-  }
-
-  .contact ul li .address {
-   
-  }
 }
 
 @media (max-width: 570px) {
   .tech h2, .services h2 {
     font-size: 3em;
-  }
-}
-
-@media (max-width: 540px) {
-  .services h2 {
-    /* font-size: 35px; */
   }
 }
 
@@ -463,18 +446,53 @@ body {
   }
 }
 
+@media (max-width: 495px) {
+  .page-header {
+    background-image: url('../img/header-bg.jpeg');
+    position: relative;
+    z-index: 1;
+    color: #eccd1e;
+  }
+
+  .page-header p {
+    color: #fff;
+  }
+
+  .page-header:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .page-header .button {
+    text-decoration: none;
+    font-style: 1.2em;
+    color: #ff8c1a;
+    border: #ff8c1a 2px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .page-header .button:hover {
+    border-color: #ff8c1a;
+    color: #ff8c1a;
+  }
+}
+
 @media (max-width: 490px) {
   .services h2 {
     font-size: 2.4em;
-    padding: 0 5px;
+    padding: 10px 5px;
   }
 }
 
 @media (max-width: 460px) {
-  .page-footer p {
-    /* font-size: 20px; */
-  }
-
   .page-footer img {
     width: 25px;
     height: 25px;
@@ -485,7 +503,7 @@ body {
   .text-sec h2 {
     font-size: 2em;
    
-    margin-bottom: 10px;
+    margin: 20px 0;
   }
 
   .flex-row, .flex-row-reversed {
@@ -494,12 +512,6 @@ body {
 
   .text-sec p {
     margin: 10px 0;
-  }
-}
-
-@media (max-width: 430px) {
-  .text-sec p {
-    /* font-size: 18px; */
   }
 }
 
